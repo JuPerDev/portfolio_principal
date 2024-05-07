@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body {
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#formCont h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #fff;
+}
+
+#formCont{
+    margin-top: 30px;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+}
+
+#formCont button {
+    cursor: pointer;
+    width: 90%;
+    height: 50px;
+    background-color: #FC5C7D;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+#formCont button:hover {
+    background-color: #de3986;
+
+}
+.form-group {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    border: none;
+}
+
+.form-group input:focus {
+    outline:2px solid #FC5C7D;
+}
+
+.error-message{
+    color: #fff;
+    background-color: rgb(252, 92, 125, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#showUsers {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+}
+
+#showUsers div {
+    display: flex;
+    font-size: 0.8em;
+    width: 90%;
+    justify-content: space-between;
+    padding:15px;
+    border-bottom: solid 1px #fff;
+}
+
+.borrar {
+    cursor: pointer;
+    height: 50px;
+    background-color: #FC5C7D;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.borrar:hover{
+    background-color: #de3986;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    gap: 20px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+input {
+    color: #484848;
+    text-align: center;
+    height: 50px;
+    padding: 10px 30px;
+    font-size: 30px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border:none;
+}
+
+input:focus {
+    outline:2px solid #3677f9;
+}
+
+input::placeholder {
+    opacity: 0.2;
+}
+
+button {
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3677f9;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+}
+
+button:hover {
+    background-color: #1952c6;
+    border-radius: 0;
+    transform: scale(1.1);
+}
+
+/* Resultados */
+#datosClima{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #3677f9;
+    border-radius: 15px;
+    opacity:0;
+    transition: opacity 0.5s ease;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+#datosClima img{
+    width: 3em;
+}
+
+#datosClima h2 {
+    font-size: 3em;
+}
+
